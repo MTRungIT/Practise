@@ -1,0 +1,14 @@
+var sports = ['football', 'rugby', 'volleyball', 'tennis', 'swimming' ]
+var subject = ['Math']
+sports.pop()
+sports.push('Swimming')
+sports.shift()
+sports.unshift('Football')
+console.log(sports)
+console.log(typeof sports)
+console.log(sports.length)
+console.log(sports[2])
+console.log(sports.join(', '))
+sports.splice(0, 2, 'Baseball')
+console.log(sports)
+console.log(sports.concat(subject))
