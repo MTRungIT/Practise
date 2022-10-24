@@ -1,0 +1,16 @@
+function Hello(name, age) {
+    this.NAME = name;
+    this.AgE = age;
+    this.intro = function() {
+        return `i'm ${this.name}. i'm ${age} years old.`
+    }
+}
+var user = new Hello("Trung", 18)
+var user2 = new Hello("Hải", 18)
+Hello.prototype.words = function() {
+    return  `Nice to meet you, ${this.name}`
+}
+user.surname = "Hoàng"
+user2.job = function() {
+    return `I'm still a Student`
+}
